@@ -1,0 +1,140 @@
+{
+	"info": {
+		"_postman_id": "ce7996bb-8119-454e-ad8e-b169ac2d14b2",
+		"name": "books-crud",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27943630"
+	},
+	"item": [
+		{
+			"name": "GET-ALL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://books-crud-j9c2.onrender.com/books/?page=1",
+					"protocol": "https",
+					"host": [
+						"books-crud-j9c2",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"books",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET-BOOK",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://books-crud-j9c2.onrender.com/books/654a6891403b080098beb86d",
+					"protocol": "https",
+					"host": [
+						"books-crud-j9c2",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"books",
+						"654a6891403b080098beb86d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST-BOOK",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Book Render\",\r\n    \"author\": \"Render Person\",\r\n    \"summary\": \"Render 45456\"\r\n}"
+				},
+				"url": {
+					"raw": "https://books-crud-j9c2.onrender.com/books",
+					"protocol": "https",
+					"host": [
+						"books-crud-j9c2",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT-BOOK",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Updated Title\",\r\n    \"author\": \"Aithor Updated\",\r\n    \"summary\": \"someone\"\r\n}"
+				},
+				"url": {
+					"raw": "https://books-crud-j9c2.onrender.com/books/1245",
+					"protocol": "https",
+					"host": [
+						"books-crud-j9c2",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"books",
+						"1245"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DEL-BOOK",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://books-crud-j9c2.onrender.com/books/654a661ed66f27d90c36f820",
+					"protocol": "https",
+					"host": [
+						"books-crud-j9c2",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"books",
+						"654a661ed66f27d90c36f820"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
